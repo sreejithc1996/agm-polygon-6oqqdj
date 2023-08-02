@@ -1,0 +1,7 @@
+<agm-map [latitude]="options.lat" [longitude]="options.lng" #agmMap>
+  <agm-drawing-manager (polygonComplete)="polygonCreated($event)" [drawingControl]="managerOptions.drawingControl" [drawingControlOptions]="managerOptions.drawingControlOptions"
+    [polygonOptions]='managerOptions.polygonOptions' [drawingMode]='managerOptions.drawingMode'>
+  </agm-drawing-manager>
+</agm-map>
+<!-- <button (click)="getPath()">Get Latest Path</button> -->
+
